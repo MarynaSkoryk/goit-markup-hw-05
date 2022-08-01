@@ -627,7 +627,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 .feature-thumb {
   position: relative;
   overflow: hidden;
@@ -664,7 +663,9 @@ body {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .all-work-card:hover .feature-thumb::before,
+.all-work-card:focus .feature-thumb::before,
 .all-work-card:hover .feature-thumb-text,
+.all-work-card:focus .feature-thumb-text,
 .all-work-card:hover,
 .all-work-card:focus {
   opacity: 1;
