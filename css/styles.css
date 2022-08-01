@@ -160,7 +160,7 @@ img {
   padding: 32px 0;
   color: var(--primary-text-color);
   text-decoration: none;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-item {
   justify-content: center;
@@ -343,7 +343,10 @@ img {
   margin-right: 30px;
 }
 .work-card-container {
-  padding: 30px 0;
+  padding: 30px 32px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .work-card {
@@ -387,12 +390,11 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   background-color: transparent;
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
   box-sizing: border-box;
@@ -678,7 +680,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
